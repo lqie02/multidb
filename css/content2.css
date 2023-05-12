@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+h1
+{
+	padding-top:   100px;
+	font-family: Palatino Linotype, serif;
+	
+}
+
+h1 .cn{
+	font-family: KaiTi;
+}
+
+.content-table 
+{
+  margin-top: -50px;
+  border-collapse:inherit;
+  width: 80%;
+  margin-left: 90px;
+  border-spacing: 100px;
+}
+
+
+.content-table th
+{
+
+ text-align: right;
+ background-color: white;
+}
+
+.content-table td {
+  border: 1px solid #ccc;
+}
+
+ .content-table td 
+{
+  padding: 15px;
+  text-align: left;
+}
+
+
+.content-table img {
+  max-width: 100%;
+  max-height:100%;
+  object-fit:fill;
+  zoom:400%;
+}
+
+.content-table audio {
+  width: 60%;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: -5px;
+}
+
+.content-table p {
+  margin: 10px 0;
+}
+
+.content-table b {
+  font-weight: bold;
+}
+

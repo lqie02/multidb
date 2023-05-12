@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+
+h1
+{
+	padding-top: 70px;
+	font-family: Palatino Linotype, serif;
+}
+
+h1 .qz
+{
+	font-family: KaiTi;
+}
+
+h3
+{
+	font-family: Palatino Linotype, serif;
+}
+
+.button
+{
+  background-color:#696043; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #383434;
+  color: white;
+}
+
