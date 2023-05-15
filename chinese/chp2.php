@@ -87,7 +87,7 @@
     <div class="w3-right w3-hide-small">
       <a href="chinese.php?id=5003" class="w3-bar-item w3-button">Content</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="logout.php" class="w3-bar-item w3-button">Logout</a>
+      <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
     </div>
   </div>
 </div>

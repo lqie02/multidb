@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('connection/connection.php');
 
 if(isset($_SESSION["visitorID"]))
 {

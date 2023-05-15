@@ -33,8 +33,8 @@ $languageID = $_GET['id'];
   <a href="chinese.php?id=5003" class="w3-bar-item w3-button">Chapter</a>
   <a href="assessment.php?id=5003" class="w3-bar-item w3-button">Assessment</a>
   <a href="result.php" class="w3-bar-item w3-button">Result</a>
-  <a href="../feedback.php?id=5003" class="w3-bar-item w3-button">Feedback</a>
-  <a href="../comment.php" class="w3-bar-item w3-button">Comment</a>
+  <a href="feedback.php?id=5003" class="w3-bar-item w3-button">Feedback</a>
+  <a href="comment.php" class="w3-bar-item w3-button">Comment</a>
 </div>
 
 <div class="w3-top">
