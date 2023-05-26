@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('connection/connection.php');
+include('../connection/connection.php');
 
 if(isset($_SESSION["visitorID"]))
 {
@@ -64,7 +64,7 @@ else
 			<li>
 				<div class="comment-main-level">
 					<!-- Avatar -->
-					<div class="comment-avatar"><img src="image/sakura.png" alt="" style="background-color: aliceblue"></div>
+					<div class="comment-avatar"><img src="../image/sakura.png" alt="" style="background-color: aliceblue"></div>
 					
 
 					<!-- Contenedor del Comentario -->
