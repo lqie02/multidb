@@ -22,7 +22,7 @@ $assid = $_POST['assid'];
         $_SESSION['total'] += 1;
     }
 
-	
+
 	
 ?>
 <!DOCTYPE html>
@@ -45,11 +45,11 @@ $assid = $_POST['assid'];
         <a href="../home.php" class="w3-bar-item w3-button"><b>PLATES</b> of JOYS</a>
     <!-- Float links to the right. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
-              <a href="#projects" class="w3-bar-item w3-button">Content</a>
-              <a href="#about" class="w3-bar-item w3-button">About</a>
+              <a href="../home.php" class="w3-bar-item w3-button">Content</a>
+              <a href="../about.php" class="w3-bar-item w3-button">About</a>
               <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
           </div>
-	</div>
+      </div>
   </div>
 	
 	<center><h1>Assessment 2 <span class="qz"> / 测验2</span></h1></center>
@@ -58,6 +58,7 @@ $assid = $_POST['assid'];
 	
 	<div class="card mb-3">
 	<?php
+	mysqli_set_charset($conn,"utf8");	
     $quiz2sql = "SELECT * from questiontable q, audio a WHERE a.audioid = q.audioid AND assid = '".$assid."' AND questionID > $questionID LIMIT 1";
     $quiz2result = mysqli_query($conn,$quiz2sql);
 	

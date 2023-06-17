@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
     $lid = $_POST['languageid'];
     $ratingValue = $_POST['ratingValue'];
 	$textarea = $_POST['textarea'];
-    
+    $date = NOW();
 	$query = "INSERT INTO feedback (VISITORID,LANGUAGEID,RATING,FEEDDATE,REMARK) VALUES ('$id','$lid','$ratingValue',NOW(),'$textarea')";
 	
 	if($conn -> query($query))
@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 	}
 	else
 		{
-			echo "<script>alert('>Error on submit please try again.');</script>";
+			echo "<script>alert('>Error on submit please try again.$id,$lid,$ratingValue,$textarea');</script>";
 			echo"<meta http-equiv='refresh' content='0; url=feedback.php?id=5003'/>";
 		}
 	

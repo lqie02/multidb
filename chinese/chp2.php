@@ -13,7 +13,7 @@
 <link rel="shortcut icon" type="png" href="../image/fork.png">
 <link rel="stylesheet" href="https://fonts.googleapls.com/css2?family=PT+Sans:wght@400:700&display=swap" >
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../css/content2.css" />
+<link rel="stylesheet" href="../css/cont1.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 <style>
@@ -81,16 +81,16 @@
 	
 	<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="../home.php" class="w3-bar-item w3-button"><b>PLATES</b> of JOYS</a>
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="../home.php" class="w3-bar-item w3-button"><b>PLATES</b> of JOYS</a>
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="chinese.php?id=5003" class="w3-bar-item w3-button">Content</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
-    </div>
+          <div class="w3-right w3-hide-small">
+              <a href="../home.php" class="w3-bar-item w3-button">Content</a>
+              <a href="../about.php" class="w3-bar-item w3-button">About</a>
+              <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
+          </div>
+      </div>
   </div>
-</div>
 	
 	<h1><center>Chapter 2  <span class="cn">(第二章)</span></center></h1>
 		

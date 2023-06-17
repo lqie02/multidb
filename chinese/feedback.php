@@ -42,11 +42,11 @@ $id = $_GET['id'];
 
 <div class="w3-top">
       <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="../home.php" class="w3-bar-item w3-button" ><b>PLATES</b> of JOYS</a>
+        <a href="../home.php" class="w3-bar-item w3-button"><b>PLATES</b> of JOYS</a>
     <!-- Float links to the right. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
-              <a href="#" class="w3-bar-item w3-button">Content</a>
-              <a href="#about" class="w3-bar-item w3-button">About</a>
+              <a href="../home.php" class="w3-bar-item w3-button">Content</a>
+              <a href="../about.php" class="w3-bar-item w3-button">About</a>
               <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
           </div>
       </div>

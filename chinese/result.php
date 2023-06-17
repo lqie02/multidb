@@ -52,8 +52,8 @@
     <a href="../home.php" class="w3-bar-item w3-button"><b>PLATES</b> of JOYS</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="chinese.php?id=5003" class="w3-bar-item w3-button">Content</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="../home.php" class="w3-bar-item w3-button">Content</a>
+      <a href="../about.php" class="w3-bar-item w3-button">About</a>
       <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
     </div>
   </div>
@@ -92,9 +92,9 @@
       <?php
       if(isset($_GET['level']) && !empty($_GET['level'])) {
         $level = $_GET['level'];
-        $test = mysqli_query($conn,"SELECT * FROM assesmenttaken a JOIN assessment s ON a.ASSID = s.ASSID WHERE VISITORID = '$visitor' AND LEVEL = '$level' ORDER BY CASE WHEN s.LEVEL = 'Easy' THEN 1 WHEN s.LEVEL = 'Medium' THEN 2 WHEN s.LEVEL ='Hard' THEN 3 END;");
+        $test = mysqli_query($conn,"SELECT * FROM assesmenttaken a JOIN assessment s ON a.ASSID = s.ASSID WHERE VISITORID = '$visitor' AND LEVEL = '$level' AND ASSNAME LIKE '%Chinese%' ORDER BY CASE WHEN s.LEVEL = 'Easy' THEN 1 WHEN s.LEVEL = 'Medium' THEN 2 WHEN s.LEVEL ='Hard' THEN 3 END;");
       } else {
-        $test = mysqli_query($conn,"SELECT * FROM assesmenttaken a JOIN assessment s ON a.ASSID = s.ASSID WHERE VISITORID = '$visitor' ORDER BY CASE WHEN s.LEVEL = 'Easy' THEN 1 WHEN s.LEVEL = 'Medium' THEN 2 WHEN s.LEVEL ='Hard' THEN 3 END;");
+        $test = mysqli_query($conn,"SELECT * FROM assesmenttaken a JOIN assessment s ON a.ASSID = s.ASSID WHERE VISITORID = '$visitor' AND ASSNAME LIKE '%Chinese%' ORDER BY CASE WHEN s.LEVEL = 'Easy' THEN 1 WHEN s.LEVEL = 'Medium' THEN 2 WHEN s.LEVEL ='Hard' THEN 3 END;");
       }
       
       $i=1;
