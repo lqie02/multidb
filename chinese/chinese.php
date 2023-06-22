@@ -35,6 +35,14 @@ $languageID = $_GET['id'];
   <a href="result.php" class="w3-bar-item w3-button">Result</a>
   <a href="feedback.php?id=5003" class="w3-bar-item w3-button">Feedback</a>
   <a href="comment.php" class="w3-bar-item w3-button">Comment</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button">Metadata</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card">
+      <a href="associative.php" class="w3-bar-item w3-button">Associative</a>
+      <a href="schema.php" class="w3-bar-item w3-button">Schema</a>
+      <a href="navigational.php" class="w3-bar-item w3-button">Navigational</a>
+    </div>
+  </div>
 </div>
 
 <div class="w3-top">
@@ -44,7 +52,7 @@ $languageID = $_GET['id'];
           <div class="w3-right w3-hide-small">
               <a href="../home.php" class="w3-bar-item w3-button">Content</a>
               <a href="../about.php" class="w3-bar-item w3-button">About</a>
-              <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>
+              <a href="../logout.php" class="w3-bar-item w3-button">Logout</a>	  
           </div>
       </div>
   </div>
@@ -94,7 +102,23 @@ $languageID = $_GET['id'];
   </div>
 </section>
 
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
       
 </body>
 </html>

@@ -3,11 +3,8 @@
   $visitor =  $_SESSION['visitorID'];
   include "../connection/connection.php";
 
-
 ?>
-<!doctype html>
-<html>
-<head>
+
 <!doctype html>
 <html>
 <head>
@@ -37,13 +34,21 @@
 <body>
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-card" style="width:16%;right:0; margin-top: -35px; font-size: 20px; ">
-  <h3 class="w3-bar-item" style="font-weight: 700">CONTENT</h3>
+<div class="w3-sidebar w3-bar-block w3-card" style="width:16%;right:0; margin-top:-35px; font-size: 20px;">
+  <h3 class="w3-bar-item"><b>CONTENT</b></h3>
   <a href="chinese.php?id=5003" class="w3-bar-item w3-button">Chapter</a>
   <a href="assessment.php?id=5003" class="w3-bar-item w3-button">Assessment</a>
   <a href="result.php" class="w3-bar-item w3-button">Result</a>
   <a href="feedback.php?id=5003" class="w3-bar-item w3-button">Feedback</a>
   <a href="comment.php" class="w3-bar-item w3-button">Comment</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button">Metadata</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card">
+      <a href="associative.php" class="w3-bar-item w3-button">Associative</a>
+      <a href="schema.php" class="w3-bar-item w3-button">Schema</a>
+      <a href="navigational.php" class="w3-bar-item w3-button">Navigational</a>
+    </div>
+  </div>
 </div>
 
 <!-- Navbar (sit on top) -->
