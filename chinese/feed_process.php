@@ -17,7 +17,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
     $lid = $_POST['languageid'];
     $ratingValue = $_POST['ratingValue'];
 	$textarea = $_POST['textarea'];
-    $date = NOW();
 	$query = "INSERT INTO feedback (VISITORID,LANGUAGEID,RATING,FEEDDATE,REMARK) VALUES ('$id','$lid','$ratingValue',NOW(),'$textarea')";
 	
 	if($conn -> query($query))
