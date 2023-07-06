@@ -71,7 +71,9 @@ if(isset($_POST['btn_login']))
     <form action="" method="POST" class="login-email">
 		
       <p align="center" class="login-text" style="font-size: 2rem; font-weight: 800;">Visitor Login</p><br>
-      
+      <p align="justify"><b>Notes:</b> </p>
+	  <p align="justify">For Testing Purposes, each group need to login with group name. For Example: mon_06 </p>
+	  <p align="justify">Option: mon_01 - mon_09/tue_01 - tue_12</p><br>
 
         <div class="input-group">
 		  <label for="VISITORID">&nbsp;&nbsp; Visitor ID :</label> <br><br>
