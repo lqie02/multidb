@@ -71,7 +71,7 @@ else
 		<div class="diffSection" id="services_section">
 		<center><p style="font-size: 45px; padding: 100px; padding-bottom: 40px; color: black;">Please Choose Your Language:</p></center>
 		</div>
-		<a href="#.php?id=5001"><div class="s-card"><img src="image/eng.png"><p>ENGLISH</p></div></a>
+		<a href="english/english.php?id=5001"><div class="s-card"><img src="image/eng.png"><p>ENGLISH</p></div></a>
 		<a href="#.php?id=5002"><div class="s-card"><img src="image/melayu.png"><p>BAHASA MELAYU</p></div></a>
 		<a href="chinese/chinese.php?id=5003"><div class="s-card"><img src="image/chat.png"><p>CHINESE</p></div></a>
 	</div>
